@@ -1,0 +1,161 @@
+/* ======================= GLOBAL ========================== */
+p {
+    font-family: "Alegreya Sans", serif;
+    color: #8C8A86;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Alegreya", serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.space {
+    padding-block: 5rem;
+}
+
+.color {
+    background-color: #403D38;
+}
+
+.colors {
+    background-color: #353330;
+}
+
+.box {
+    position: fixed;
+    right: 0%;
+    top: 30%;
+    cursor: pointer;
+    z-index: 11;
+
+    i {
+        transition: color 1s;
+        color: gray;
+
+        &:hover {
+            color: aqua;
+        }
+    }
+}
+
+.media {
+    i {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #403D38;
+        color: #8C8A86;
+        transition: color 1s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .f,
+    .g,
+    .l,
+    .t {
+        transition: background-color 1s;
+    }
+
+    .f:hover {
+        background-color: blue;
+    }
+
+    .g:hover {
+        background-color: red;
+    }
+
+    .l:hover {
+        background-color: cornflowerblue;
+    }
+
+    .t:hover {
+        background-color: dodgerblue;
+    }
+}
+
+.inner-map {
+    background: url(../images/contact-details-map.png) center;
+    background-size: cover;
+}
+
+/* ======================= About ========================== */
+.header {
+    padding-block: 80px;
+    background: url(../images/drew-coffman-1872.jpg) bottom;
+    background-size: cover;
+}
+
+.line {
+    border: solid 1px #d8d5cf86;
+    width: 10%;
+    margin-block: 3.125rem;
+}
+
+.icons {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8E7754;
+    color: #fff;
+}
+
+/* ======================= Our Offer ========================== */
+.inner {
+    padding-block: 80px;
+    background: url(../images/drew-coffman-1872.jpg) center;
+    background-size: cover;
+}
+
+/* ======================= Gallery ========================== */
+.image {
+    position: relative;
+    transition: transform 1s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    i {
+        transition: opacity 1s;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+/* ======================= Blog ========================== */
+
+/* ======================= Contact ========================== */
+input,textarea{
+    outline: none;
+}
+
+input:focus,textarea:focus{
+border: #8e5454 solid 1px;
+}
